@@ -5,6 +5,7 @@ export default {
   build: {
     outDir: "../dist",
   },
+  base: "/coffee-party/",
   server: {
     port: 8080,
   },
