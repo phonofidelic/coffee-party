@@ -37,9 +37,18 @@ jobs:
           node-version: lts/*
           cache: "npm"
       - name: Install dependencies
-        run: npm ci
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
       - name: Build
-        run: npm run build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build # will run `yarn build` command
+        # ToDo
+      # - name: Test
+      #   uses: borales/actions-yarn@v4
+      #   with:
+      #     cmd: test # will run `yarn test` command
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
