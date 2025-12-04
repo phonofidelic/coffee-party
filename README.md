@@ -8,22 +8,26 @@ The company is primarily a B2B that provides quality coffee and coffee machines 
 
 ## Project Requirements
 
-The site should consist of three pages:
+- The site should consist of three pages:
 
-1. **Index** consisting of 4 parts:
-   - Who We Are
-   - What We Do
-   - Why choose us?
-   - Coffee Party Events!
-2. **Products and events**:
-   - Products section showing different models of coffee machines in a grid
-   - Events section with sub-sections for B2B and B2C
-3. **About us**:
-   - More detailed information about the company
-   - Profile and contact info for the CEO
-   - Profile and contact info for the head of HR
+  1. **Index** consisting of 4 parts:
+     - Who We Are
+     - What We Do
+     - Why choose us?
+     - Coffee Party Events!
+  2. **Products and events**:
+     - Products section showing different models of coffee machines in a grid
+     - Events section with sub-sections for B2B and B2C
+  3. **About us**:
+     - More detailed information about the company
+     - Profile and contact info for the CEO
+     - Profile and contact info for the head of HR
 
-The website should display correctly both on mobile and desktop devices.
+- Each page should have a consistent layout including:
+  - a **header** with logo and company name
+  - a **navbar** with links to all three pages
+  - a **footer** with copyright, date and site admin info
+- The website should display correctly both on mobile and desktop devices.
 
 ## Toolkit
 
