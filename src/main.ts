@@ -1,6 +1,6 @@
 import "/scss/styles.scss";
-import { Footer } from "./templates/footer.ts";
-import { Header } from "./templates/header.ts";
+import { Footer, footerTemplateConfig } from "./templates/footer.ts";
+import { Header, headerTemplateConfig } from "./templates/header.ts";
 
-customElements.define(Header.tagName, Header);
-customElements.define(Footer.tagName, Footer);
+customElements.define(headerTemplateConfig.tagName, Header);
+customElements.define(footerTemplateConfig.tagName, Footer);
