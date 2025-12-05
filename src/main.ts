@@ -1,4 +1,5 @@
 import "/scss/styles.scss";
+import { Page, pageTemplateConfig } from "./templates/page.ts";
 import { Footer, footerTemplateConfig } from "./templates/footer.ts";
 import { Header, headerTemplateConfig } from "./templates/header.ts";
 import {
@@ -7,6 +8,7 @@ import {
 } from "./templates/navigation.ts";
 
 // Register templates
+customElements.define(pageTemplateConfig.tagName, Page);
 customElements.define(headerTemplateConfig.tagName, Header);
 customElements.define(footerTemplateConfig.tagName, Footer);
 customElements.define(navigationTemplateConfig.tagName, Navigation);

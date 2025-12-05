@@ -5,17 +5,21 @@ if (!NODE_ENV) {
   throw new Error("NODE_ENV is not set");
 }
 
-const basePath = {
-  development: "/",
-  production: "/coffee-party/",
-};
-
 export default {
   root: resolve(__dirname, "src"),
+  appType: "mpa",
   build: {
     outDir: "../dist",
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "src", "main.ts"),
+        index: resolve(__dirname, "src", "index.html"),
+        products: resolve(__dirname, "src", "products.html"),
+        about: resolve(__dirname, "src", "about.html"),
+      },
+    },
   },
-  base: basePath[NODE_ENV],
+  base: "",
   server: {
     port: 8080,
   },

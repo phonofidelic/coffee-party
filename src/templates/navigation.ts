@@ -3,12 +3,22 @@ import { Template, type TemplateConfig } from "./template";
 
 export const navigationTemplateConfig: TemplateConfig = {
   templateTagName: "coffee-navigation-template",
-  tagName: "coffee-navigation",
-  html,
+  tagName: "coffee-party-navigation",
+  html: html.replaceAll("{BASE_PATH}", import.meta.env.BASE_URL),
 };
 
 export class Navigation extends Template {
   constructor() {
     super(navigationTemplateConfig);
+  }
+
+  connectedCallback() {
+    console.log("Custom element added to page.");
+    const links = this.templateNode.content.querySelectorAll("a");
+    console.log(links);
+
+    // links.forEach((link) =>
+    //   link.setAttribute("href", `${import.meta.env.BASE_URL + link.href}`)
+    // );
   }
 }
