@@ -3,13 +3,15 @@
     <ul class="navbar-nav m-auto">
       <slot name="nav-items">
         <li class="nav-item">
-          <a class="nav-link" href="/"><h3>Home</h3></a>
+          <a class="nav-link" href="{BASE_PATH}"><h3>Home</h3></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/products"><h3>Our Products</h3></a>
+          <a class="nav-link" href="{BASE_PATH}products"
+            ><h3>Our Products</h3></a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about"><h3>About us</h3></a>
+          <a class="nav-link" href="{BASE_PATH}about"><h3>About us</h3></a>
         </li>
       </slot>
     </ul>

@@ -5,6 +5,11 @@ if (!NODE_ENV) {
   throw new Error("NODE_ENV is not set");
 }
 
+const basePath = {
+  development: "/",
+  production: "/coffee-party/",
+};
+
 export default {
   root: resolve(__dirname, "src"),
   appType: "mpa",
@@ -19,7 +24,7 @@ export default {
       },
     },
   },
-  base: "",
+  base: basePath[NODE_ENV],
   server: {
     port: 8080,
   },
