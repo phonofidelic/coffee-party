@@ -1,14 +1,15 @@
+import sass from "/scss/styles.scss?url";
 import html from "./footer.html?raw";
 
 const TEMPLATE_TAG_NAME = "coffee-footer-template";
 
-class Footer extends HTMLElement {
+export class Footer extends HTMLElement {
   static templateTagName = TEMPLATE_TAG_NAME;
   static tagName = "coffee-party-footer";
   constructor() {
     super();
 
-    console.log(html);
+    // Get template html and add it to the document head
     const templateNode = document.createElement("template");
     templateNode.id = TEMPLATE_TAG_NAME;
     templateNode.innerHTML = html;
@@ -20,11 +21,13 @@ class Footer extends HTMLElement {
     const clone = document.importNode(templateContent, true);
     const shadowRoot = this.attachShadow({ mode: "open" });
     this.attachInternals;
-    shadowRoot.appendChild(clone);
-  }
 
-  connectedCallback() {
-    console.log("connected");
+    // Attach custom styles
+    const styleNode = document.createElement("style");
+    styleNode.innerHTML = `@import url("${sass}");`;
+    shadowRoot.appendChild(styleNode);
+
+    shadowRoot.appendChild(clone);
   }
 
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
@@ -33,7 +36,3 @@ class Footer extends HTMLElement {
     );
   }
 }
-
-// customElements.define("coffee-party-footer", Footer);
-
-export { Footer };

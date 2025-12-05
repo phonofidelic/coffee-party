@@ -1,3 +1,4 @@
+import sass from "/scss/styles.scss?url";
 import html from "./header.html?raw";
 
 const TEMPLATE_TAG_NAME = "coffee-header-template";
@@ -20,6 +21,12 @@ export class Header extends HTMLElement {
     const clone = document.importNode(templateContent, true);
     const shadowRoot = this.attachShadow({ mode: "open" });
     this.attachInternals;
+
+    // Attach custom styles
+    const styleNode = document.createElement("style");
+    styleNode.innerHTML = `@import url("${sass}");`;
+    shadowRoot.appendChild(styleNode);
+
     shadowRoot.appendChild(clone);
   }
 }
