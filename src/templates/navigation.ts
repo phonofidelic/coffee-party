@@ -16,9 +16,5 @@ export class Navigation extends Template {
     console.log("Custom element added to page.");
     const links = this.templateNode.content.querySelectorAll("a");
     console.log(links);
-
-    // links.forEach((link) =>
-    //   link.setAttribute("href", `${import.meta.env.BASE_URL + link.href}`)
-    // );
   }
 }
