@@ -1,15 +1,19 @@
-<nav class="navbar navbar-expand-md">
-  <ul class="navbar-nav">
-    <slot name="nav-items">
-      <li class="nav-item">
-        <a href="{BASE_PATH}"><h2>Home</h2></a>
-      </li>
-      <li class="nav-item">
-        <a href="{BASE_PATH}products"><h2>Our Products</h2></a>
-      </li>
-      <li class="nav-item">
-        <a href="{BASE_PATH}about"><h2>About us</h2></a>
-      </li>
-    </slot>
-  </ul>
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <ul class="navbar-nav m-auto">
+      <slot name="nav-items">
+        <li class="nav-item">
+          <a class="nav-link" href="{BASE_PATH}"><h3>Home</h3></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{BASE_PATH}products"
+            ><h3>Our Products</h3></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{BASE_PATH}about"><h3>About us</h3></a>
+        </li>
+      </slot>
+    </ul>
+  </div>
 </nav>

@@ -1,12 +1,20 @@
-<footer class="container">
-  <div class="row">
-    <div class="col">
-      <h2 class="text-bg-primary p-3">
+<footer class="container-fluid">
+  <div class="item row">
+    <div class="col text-bg-primary">
+      <h2 class="p-3">
         <slot name="footer-header">Footer template header</slot>
       </h2>
     </div>
-    <div class="col">
-      <p><slot name="footer-text">Footer template text</slot></p>
+    <div class="col bg-primary-subtle text-primary fw-light text-end py-3">
+      <p class="">
+        <slot name="footer-text">Footer template text</slot>
+      </p>
+      <p class="">
+        Site provided by
+        <a href="https://github.com/phonofidelic" target="_blank"
+          >phonofidelic</a
+        >
+      </p>
     </div>
   </div>
 </footer>

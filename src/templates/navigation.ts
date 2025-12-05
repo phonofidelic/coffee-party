@@ -11,10 +11,4 @@ export class Navigation extends Template {
   constructor() {
     super(navigationTemplateConfig);
   }
-
-  connectedCallback() {
-    console.log("Custom element added to page.");
-    const links = this.templateNode.content.querySelectorAll("a");
-    console.log(links);
-  }
 }
