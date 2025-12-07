@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/body-scroll-lock": "^3.1.2",
     "@types/bootstrap": "^5.2.10",
     "sass": "^1.94.2",
     "typescript": "~5.9.3",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "bootstrap": "^5.3.8"
   }
 }

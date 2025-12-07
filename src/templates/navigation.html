@@ -1,19 +1,44 @@
-<nav class="navbar navbar-expand-sm" data-ssr>
+<div
+  style="transition: opacity 0.3s"
+  id="coffee-party-nav-backdrop"
+  class="d-sm-none position-fixed w-100 h-100 bg-dark z-n1 opacity-0"
+></div>
+<nav
+  class="navbar navbar-expand-sm mb-5 position-sticky top-0 bg-light p-sm-4 z-2"
+>
   <div class="container-fluid">
-    <ul class="navbar-nav m-auto">
-      <slot name="nav-items">
-        <li class="nav-item">
-          <a class="nav-link" href="{BASE_PATH}"><h3>Home</h3></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{BASE_PATH}products">
-            <h3>Our Products</h3>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{BASE_PATH}about"><h3>About us</h3></a>
-        </li>
-      </slot>
-    </ul>
+    <a class="navbar-brand" href="{BASE_PATH}">
+      <h1 class="text-primary">Coffee Party</h1>
+    </a>
+    <button
+      id="coffee-party-nav-toggle-button"
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#coffee-party-nav-group"
+      role="button"
+      aria-expanded="false"
+      aria-controls="coffee-party-nav-group"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="coffee-party-nav-group">
+      <ul class="navbar-nav m-auto">
+        <slot name="nav-items">
+          <li class="nav-item">
+            <a class="nav-link" href="{BASE_PATH}"><h3>Home</h3></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{BASE_PATH}products">
+              <h3>Our Products</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{BASE_PATH}about"><h3>About us</h3></a>
+          </li>
+        </slot>
+      </ul>
+    </div>
   </div>
 </nav>
