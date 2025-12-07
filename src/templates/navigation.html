@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm">
+<nav class="navbar navbar-expand-sm" data-ssr>
   <div class="container-fluid">
     <ul class="navbar-nav m-auto">
       <slot name="nav-items">
@@ -6,9 +6,9 @@
           <a class="nav-link" href="{BASE_PATH}"><h3>Home</h3></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{BASE_PATH}products"
-            ><h3>Our Products</h3></a
-          >
+          <a class="nav-link" href="{BASE_PATH}products">
+            <h3>Our Products</h3>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{BASE_PATH}about"><h3>About us</h3></a>

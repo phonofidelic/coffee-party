@@ -1,7 +1,23 @@
-<body class="p-4">
   <slot name="page-header">[PAGE HEADER]</slot>
   <slot name="page-nav">
-    <coffee-party-navigation></coffee-party-navigation>
+      <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <ul class="navbar-nav m-auto">
+          <slot name="nav-items">
+            <li class="nav-item">
+              <h3>Home</h3>
+            </li>
+            <li class="nav-item">
+              <h3>Our Products</h3>
+            </li>
+            <li class="nav-item">
+              <h3>About us</h3>
+            </li>
+          </slot>
+        </ul>
+      </div>
+    </nav>
+    </slot>
   </slot>
   <slot name="page-main">[PAGE MAIN]</slot>
   <slot name="page-footer">
@@ -10,4 +26,3 @@
       <span slot="footer-text">&copy; Coffee Party 2025</span>
     </coffee-party-footer>
   </slot>
-</body>

@@ -1,4 +1,4 @@
-import sass from "/scss/styles.scss?url";
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.css?raw";
 
 export type TemplateConfig = {
   templateTagName: string;
@@ -8,31 +8,38 @@ export type TemplateConfig = {
 export class Template extends HTMLElement {
   templateTagName: string;
   html: string;
-  templateNode: HTMLTemplateElement;
+  templateNode?: HTMLTemplateElement;
   constructor(config: TemplateConfig) {
     super();
 
     this.templateTagName = config.templateTagName;
     this.html = config.html;
 
-    // Create template element and add it to the document head
-    this.templateNode = document.createElement("template");
-    this.templateNode.id = this.templateTagName;
-    this.templateNode.innerHTML = this.html;
-    document.head.appendChild(this.templateNode);
+    if (!this.shadowRoot) {
+      // Create template element and add it to the document head
+      this.templateNode = document.createElement("template");
+      this.templateNode.id = this.templateTagName;
+      this.templateNode.innerHTML = this.html;
+      document.head.appendChild(this.templateNode);
 
-    let template = document.getElementById(this.templateTagName);
-    // @ts-ignore: ToDo: fix reading content prop from HTMLElement type
-    let templateContent = template?.content;
-    const clone = document.importNode(templateContent, true);
-    const shadowRoot = this.attachShadow({ mode: "open" });
-    this.attachInternals;
+      let template = document.getElementById(this.templateTagName);
+      // @ts-ignore: ToDo: fix reading content prop from HTMLElement type
+      let templateContent = template?.content;
+      // const clone = document.importNode(templateContent, true);
+      const shadowRoot = this.attachShadow({
+        mode: "open",
+        delegatesFocus: true,
+        serializable: true,
+      });
+      this.attachInternals();
 
-    // Attach custom styles
-    const styleNode = document.createElement("style");
-    styleNode.innerHTML = `@import url("${sass}");`;
-    shadowRoot.appendChild(styleNode);
+      // Attach bootstrap styles to shadow root
+      const styleNode = document.createElement("style");
+      styleNode.innerHTML = `${bootstrap}`;
+      shadowRoot.appendChild(styleNode);
 
-    shadowRoot.appendChild(clone);
+      // @ts-ignore
+      shadowRoot.appendChild(template?.content.cloneNode(true));
+    }
   }
 }

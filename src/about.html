@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Coffee Party</title>
+    <style>
+      @import url("scss/styles.scss");
+      :not(:defined):not([data-ssr]) {
+        display: none;
+      }
+    </style>
     <script type="module" src="./main.ts"></script>
   </head>
-  <coffee-party-page>
-    <coffee-party-header slot="page-header">
-      <span slot="header-title">About us</span>
-    </coffee-party-header>
-    <main slot="page-main" class="container">About main</main>
-  </coffee-party-page>
+  <body>
+    <coffee-party-page>
+      <coffee-party-header slot="page-header">
+        <span slot="header-title">About us</span>
+      </coffee-party-header>
+      <coffee-party-navigation slot="page-nav"> </coffee-party-navigation>
+      <main slot="page-main" class="container">About main</main>
+      <coffee-party-footer slot="page-footer"></coffee-party-footer>
+    </coffee-party-page>
+  </body>
 </html>
