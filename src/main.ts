@@ -10,6 +10,11 @@ import {
   ProductSkeleton,
   productSkeletonTemplateConfig,
 } from "./templates/productSkeleton.ts";
+import {
+  ProductTile,
+  productTileTemplateConfig,
+} from "./templates/productTile.ts";
+import { ProductList } from "./products.ts";
 
 // Register templates
 customElements.define(pageTemplateConfig.tagName, Page);
@@ -18,3 +23,6 @@ customElements.define(sectionTemplateConfig.tagName, Section);
 customElements.define(footerTemplateConfig.tagName, Footer);
 customElements.define(navigationTemplateConfig.tagName, Navigation);
 customElements.define(productSkeletonTemplateConfig.tagName, ProductSkeleton);
+customElements.define(productTileTemplateConfig.tagName, ProductTile);
+
+customElements.define("coffee-party-product-list", ProductList);
