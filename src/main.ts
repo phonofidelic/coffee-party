@@ -14,7 +14,7 @@ import {
   ProductTile,
   productTileTemplateConfig,
 } from "./templates/productTile.ts";
-import { ProductList } from "./products.ts";
+import { ProductList } from "./components/ProductList.ts";
 
 // Register templates
 customElements.define(pageTemplateConfig.tagName, Page);

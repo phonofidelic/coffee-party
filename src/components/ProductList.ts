@@ -1,49 +1,8 @@
-import { products } from "./products.json";
-import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.css?raw";
+import { products } from "../products.json";
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.css?raw";
+import { Component } from "./component";
 
-const CATEGORY_COFFEE_MACHINES = "Coffee Machine";
-const CATEGORY_COFFEE_BEANS = "Coffee Beans";
-const CATEGORY_EVENTS = "Event";
-
-type ProductCategory =
-  | typeof CATEGORY_COFFEE_MACHINES
-  | typeof CATEGORY_COFFEE_BEANS
-  | typeof CATEGORY_EVENTS;
-
-type Product = {
-  id: string;
-  name: string;
-  category: ProductCategory;
-  product_image: string;
-  short_description: string;
-  long_description: string;
-  price_sek: number;
-};
-
-function isCategory(maybeCategory: any): maybeCategory is ProductCategory {
-  if (
-    ![
-      CATEGORY_COFFEE_MACHINES,
-      CATEGORY_COFFEE_BEANS,
-      CATEGORY_EVENTS,
-    ].includes(maybeCategory)
-  )
-    return false;
-
-  return true;
-}
-
-function isProduct(maybeProduct: any): maybeProduct is Product {
-  if (typeof maybeProduct.id !== "string") return false;
-  if (typeof maybeProduct.name !== "string") return false;
-  if (typeof maybeProduct.product_image !== "string") return false;
-  if (typeof maybeProduct.short_description !== "string") return false;
-  if (typeof maybeProduct.long_description !== "string") return false;
-  if (typeof maybeProduct.price_sek !== "number") return false;
-  return isCategory(maybeProduct.category);
-}
-
-export class ProductList extends HTMLElement {
+export class ProductList extends Component {
   static observedAttributes = ["category"];
   private products: Product[] = [];
 
@@ -61,7 +20,7 @@ export class ProductList extends HTMLElement {
     this.render();
   }
 
-  render() {
+  private render(): void {
     const shadowRoot = this.getShadowRoot();
     if (!shadowRoot) return;
 
@@ -112,22 +71,46 @@ export class ProductList extends HTMLElement {
       this.shadowRoot?.appendChild(element);
     });
   }
+}
 
-  private getShadowRoot(): ShadowRoot {
-    if (!this.shadowRoot) {
-      const shadowRoot = this.attachShadow({
-        mode: "open",
-      });
-      this.attachInternals();
+const CATEGORY_COFFEE_MACHINES = "Coffee Machine";
+const CATEGORY_COFFEE_BEANS = "Coffee Beans";
+const CATEGORY_EVENTS = "Event";
 
-      // Attach bootstrap styles to shadow root
-      const styleNode = document.createElement("style");
-      styleNode.innerHTML = `${bootstrap}`;
-      shadowRoot.appendChild(styleNode);
+type ProductCategory =
+  | typeof CATEGORY_COFFEE_MACHINES
+  | typeof CATEGORY_COFFEE_BEANS
+  | typeof CATEGORY_EVENTS;
 
-      return shadowRoot;
-    }
+type Product = {
+  id: string;
+  name: string;
+  category: ProductCategory;
+  product_image: string;
+  short_description: string;
+  long_description: string;
+  price_sek: number;
+};
 
-    return this.shadowRoot;
-  }
+function isCategory(maybeCategory: any): maybeCategory is ProductCategory {
+  if (
+    ![
+      CATEGORY_COFFEE_MACHINES,
+      CATEGORY_COFFEE_BEANS,
+      CATEGORY_EVENTS,
+    ].includes(maybeCategory)
+  )
+    return false;
+
+  return true;
+}
+
+function isProduct(maybeProduct: any): maybeProduct is Product {
+  if (typeof maybeProduct.id !== "string") return false;
+  if (typeof maybeProduct.name !== "string") return false;
+  if (typeof maybeProduct.product_image !== "string") return false;
+  if (typeof maybeProduct.short_description !== "string") return false;
+  if (typeof maybeProduct.long_description !== "string") return false;
+  if (typeof maybeProduct.price_sek !== "number") return false;
+  return isCategory(maybeProduct.category);
 }
