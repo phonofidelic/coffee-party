@@ -5,7 +5,7 @@
       "id": "cp-mach-001",
       "name": "AromaBrew Pro 800",
       "category": "Coffee Machine",
-      "product_image": "aromabrew-pro-800.png",
+      "product_image": "products/aromabrew-pro-800.png",
       "short_description": "Premium bean-to-cup machine for larger offices needing café-quality coffee.",
       "long_description": "AromaBrew Pro 800 is Coffee Party’s top-tier machine featuring a ceramic grinder, dual-thermoblock heating, and customizable drink profiles. Designed for high-volume use in medium to large workplaces.",
       "price_sek": 12175.34
@@ -14,7 +14,7 @@
       "id": "cp-mach-002",
       "name": "OfficeFlow Mini",
       "category": "Coffee Machine",
-      "product_image": "officeflow-mini.png",
+      "product_image": "products/officeflow-mini.png",
       "short_description": "Compact, reliable, and fast — perfect for small teams.",
       "long_description": "OfficeFlow Mini combines simplicity with high-quality brewing. Supports whole beans and ground coffee, and comes with a built-in milk frother. Ideal for meeting rooms or small office setups.",
       "price_sek": 4500
@@ -23,7 +23,7 @@
       "id": "cp-mach-003",
       "name": "BrewStation XL",
       "category": "Coffee Machine",
-      "product_image": "brewstation-xl.png",
+      "product_image": "products/brewstation-xl.png",
       "short_description": "High-capacity filter coffee system for large workplaces and events.",
       "long_description": "BrewStation XL is built for continuous brewing, making it perfect for hotels, coworking spaces, or company cafeterias. Equipped with a large water tank, advanced filter system, and auto-cleaning cycle.",
       "price_sek": 6990
@@ -32,7 +32,7 @@
       "id": "cp-mach-004",
       "name": "BaristaTouch One",
       "category": "Coffee Machine",
-      "product_image": "baristatouch-one.webp",
+      "product_image": "products/baristatouch-one.webp",
       "short_description": "A smart touchscreen espresso machine with customizable recipes.",
       "long_description": "BaristaTouch One brings café convenience to the office. Users can save personalized coffee profiles, adjust grind size, temperature, milk froth levels, and more — all from a responsive touchscreen.",
       "price_sek": 27999
@@ -120,18 +120,18 @@
     },
     {
       "id": "cp-event-001",
-      "name": "Corporate Coffee Party Experience",
+      "name": "Office Coffee Party Experience",
       "category": "Event",
-      "product_image": "event-1.webp",
+      "product_image": "events/event-1.webp",
       "short_description": "A premium coffee-tasting event tailored for companies.",
       "long_description": "Coffee Party brings a full tasting setup to your office. Includes guided coffee sessions, equipment demos, team-building activities, and exclusive corporate product discounts.",
       "price_sek": 11999
     },
     {
       "id": "cp-event-002",
-      "name": "Consumer Coffee Party Pop-Up",
+      "name": "Coffee Party Pop-Up",
       "category": "Event",
-      "product_image": "event-2.webp",
+      "product_image": "events/event-2.webp",
       "short_description": "A public tasting event where visitors can sample new beans and buy Coffee Party products.",
       "long_description": "Hosted monthly across Swedish cities, the Consumer Coffee Party Pop-Up offers coffee tasting, brewing workshops, and exclusive retail offers for visitors.",
       "price_sek": 399

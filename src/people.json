@@ -5,7 +5,7 @@
       "title": "CEO",
       "company": "Coffee Party AB",
       "profile_info": "Emilia Bergström is the visionary CEO of Coffee Party AB, leading the company’s mission to bring high-quality, sustainable coffee solutions to workplaces across Sweden. With a background in food-tech and over 12 years of experience in scaling B2B startups, Emilia combines strategic leadership with a passion for exceptional coffee. She oversees company direction, partnerships, and product innovation, ensuring Coffee Party remains at the forefront of workplace coffee experiences.",
-      "profile_image": "ceo.webp",
+      "profile_image": "people/ceo.webp",
       "contact": {
         "email": "emilia.bergstrom@example.se",
         "phone": "+46 70 123 45 67",
@@ -18,7 +18,7 @@
       "name": "Mira Sandberg",
       "title": "Head of People",
       "company": "Coffee Party AB",
-      "profile_image": "hr.webp",
+      "profile_image": "people/hr.webp",
       "profile_info": "Mira Sandberg leads Coffee Party’s HR department with a focus on people, culture, and sustainable growth. With a decade of HR experience in fast-growing Nordic startups, Mira specializes in talent development, modern workplace policies, and building inclusive company cultures. He ensures that every employee at Coffee Party has the tools and support they need to thrive.",
       "contact": {
         "email": "mira.sandberg@example.se",
@@ -32,7 +32,7 @@
       "name": "Felix Norén",
       "title": "Marketing Director",
       "company": "Coffee Party AB",
-      "profile_image": "marketing.webp",
+      "profile_image": "people/marketing.webp",
       "profile_info": "Felix Norén manages Coffee Party’s brand, marketing campaigns, and event visibility. With expertise in digital storytelling and brand strategy, Felix brings Coffee Party’s personality to life through online content, community engagement, and national promotional events—helping more people discover great workplace coffee.",
       "contact": {
         "email": "felix.noren@example.se",
