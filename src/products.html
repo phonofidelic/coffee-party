@@ -21,17 +21,63 @@
       </coffee-party-header>
       <coffee-party-navigation slot="page-nav"></coffee-party-navigation>
       <main slot="page-main" class="container">
-        <coffee-party-product-list id="product-list" class="row">
-          <div class="col-12 col-sm-6 col-md-4">
-            <coffee-party-product-skeleton></coffee-party-product-skeleton>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <coffee-party-product-skeleton></coffee-party-product-skeleton>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <coffee-party-product-skeleton></coffee-party-product-skeleton>
-          </div>
-        </coffee-party-product-list>
+        <coffee-party-section>
+          <h3 slot="section-header">Coffee Machines</h3>
+          <coffee-party-product-list
+            slot="section-content"
+            category="Coffee Machine"
+            id="product-list"
+            class="row"
+          >
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+          </coffee-party-product-list>
+        </coffee-party-section>
+        <coffee-party-section>
+          <h3 slot="section-header">Coffee Beans</h3>
+          <coffee-party-product-list
+            category="Coffee Beans"
+            id="product-list"
+            class="row"
+            slot="section-content"
+          >
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+          </coffee-party-product-list>
+        </coffee-party-section>
+        <coffee-party-section>
+          <h3 slot="section-header">Events</h3>
+          <coffee-party-product-list
+            category="Event"
+            id="product-list"
+            class="row"
+            slot="section-content"
+          >
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <coffee-party-product-skeleton></coffee-party-product-skeleton>
+            </div>
+          </coffee-party-product-list>
+        </coffee-party-section>
       </main>
       <coffee-party-footer slot="page-footer"></coffee-party-footer>
     </coffee-party-page>
