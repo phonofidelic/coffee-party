@@ -1,3 +1,4 @@
+import "./scss/styles.scss";
 import { Page, pageTemplateConfig } from "./templates/page.ts";
 import { Footer, footerTemplateConfig } from "./templates/footer.ts";
 import { Header, headerTemplateConfig } from "./templates/header.ts";

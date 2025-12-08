@@ -5,10 +5,13 @@
         <div class="img-fluid placeholder-glow h-100 w-100" alt="..."></div>
       </slot>
     </div>
-    <div class="col-md-8 col-lg-6 h-100 p-lg-5">
+    <div class="col-md-8 col-lg-6 h-100 p-lg-5 mt-5">
       <div class="card-header border-0 bg-light">
         <slot name="profile-header">
-          <h5 class="card-title">Card title</h5>
+          <div>
+            <h4 class="card-title">Employee name</h4>
+            <h3 class="text-primary fs-6 fw-bold">Title</h3>
+          </div>
         </slot>
       </div>
       <div class="card-body d-flex align-items-end h-100">

@@ -110,15 +110,6 @@
       "price_sek": 239
     },
     {
-      "id": "cp-coffee-009",
-      "name": "Colombia Reserva",
-      "category": "Coffee Beans",
-      "product_image": "",
-      "short_description": "A premium Colombian single-origin with caramel sweetness.",
-      "long_description": "Sourced from high-altitude Colombian farms, delivering a balanced cup with soft fruit tones and a clean finish.",
-      "price_sek": 299
-    },
-    {
       "id": "cp-event-001",
       "name": "Office Coffee Party Experience",
       "category": "Event",

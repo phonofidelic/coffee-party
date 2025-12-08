@@ -34,7 +34,6 @@ export class ProductList extends Component {
         "col-12",
         "col-sm-6",
         "col-lg-3",
-        "col-xl-2",
         "px-4",
         "pb-4",
         "px-sm-1",

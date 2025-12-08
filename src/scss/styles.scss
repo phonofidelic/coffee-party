@@ -1,2 +1,7 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
+
+body {
+  max-width: 900px;
+  margin: auto;
+}
