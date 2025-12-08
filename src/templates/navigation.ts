@@ -21,7 +21,6 @@ export class Navigation extends Template {
   }
 
   connectedCallback() {
-    console.log(window.location.pathname);
     if (!this.shadowRoot) return;
 
     this.toggleButton =
@@ -43,11 +42,6 @@ export class Navigation extends Template {
 
     // Add the "active" class to the nav link if current location matches
     this.shadowRoot.querySelectorAll("a").forEach((link) => {
-      console.log(
-        "link:",
-        link.href,
-        link.href.includes(window.location.pathname)
-      );
       if (link.pathname === window.location.pathname)
         return link.classList.add("active");
 
