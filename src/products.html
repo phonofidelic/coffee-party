@@ -10,15 +10,29 @@
         display: none;
       }
     </style>
+
     <script type="module" src="./main.ts"></script>
+    <script type="module" src="./products.ts"></script>
   </head>
   <body class="bg-light">
     <coffee-party-page>
       <coffee-party-header slot="page-header">
         <span slot="header-title">Products</span>
       </coffee-party-header>
-      <coffee-party-navigation slot="page-nav"> </coffee-party-navigation>
-      <main slot="page-main" class="container">Products main</main>
+      <coffee-party-navigation slot="page-nav"></coffee-party-navigation>
+      <main slot="page-main" class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <coffee-party-product-skeleton></coffee-party-product-skeleton>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <coffee-party-product-skeleton></coffee-party-product-skeleton>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <coffee-party-product-skeleton></coffee-party-product-skeleton>
+          </div>
+        </div>
+      </main>
       <coffee-party-footer slot="page-footer"></coffee-party-footer>
     </coffee-party-page>
   </body>
