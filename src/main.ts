@@ -15,6 +15,11 @@ import {
   productTileTemplateConfig,
 } from "./templates/productTile.ts";
 import { ProductList } from "./components/ProductList.ts";
+import {
+  EmployeeProfile,
+  employeeProfileConfig,
+} from "./templates/employeeProfile.ts";
+import { EmployeeProfileList } from "./components/EmployeeProfileList.ts";
 
 // Register templates
 customElements.define(pageTemplateConfig.tagName, Page);
@@ -24,5 +29,10 @@ customElements.define(footerTemplateConfig.tagName, Footer);
 customElements.define(navigationTemplateConfig.tagName, Navigation);
 customElements.define(productSkeletonTemplateConfig.tagName, ProductSkeleton);
 customElements.define(productTileTemplateConfig.tagName, ProductTile);
+customElements.define(employeeProfileConfig.tagName, EmployeeProfile);
 
 customElements.define("coffee-party-product-list", ProductList);
+customElements.define(
+  "coffee-party-employee-profile-list",
+  EmployeeProfileList
+);

@@ -1,0 +1,62 @@
+<div class="card pb-5 border-0 bg-light">
+  <div class="row">
+    <div class="col-md-4 col-lg-6 p-lg-5">
+      <slot name="profile-image">
+        <div class="img-fluid placeholder-glow h-100 w-100" alt="..."></div>
+      </slot>
+    </div>
+    <div class="col-md-8 col-lg-6 h-100 p-lg-5">
+      <div class="card-header border-0 bg-light">
+        <slot name="profile-header">
+          <h5 class="card-title">Card title</h5>
+        </slot>
+      </div>
+      <div class="card-body d-flex align-items-end h-100">
+        <slot name="profile-info">
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+        </slot>
+      </div>
+      <div class="card-footer border-0 bg-light">
+        <address class="d-flex flex-column flex-md-row gap-">
+          <div class="d-flex flex-column flex-fill">
+            <slot name="profile-contact-email">
+              <p class="px-3">
+                Email:
+                <a class="text-nowrap" href="mailto:ceo@example.com"
+                  >ceo@example.com</a
+                >
+              </p>
+            </slot>
+            <slot name="profile-contact-phone">
+              <p class="px-3">
+                Phone:
+                <a class="text-nowrap" href="tel:+467012345">+46 7012345</a>
+              </p>
+            </slot>
+            <slot name="profile-contact-linkedin">
+              <p class="px-3">
+                LinkedIn:
+                <a
+                  class="text-nowrap"
+                  href="https://www.example.com/in/123-456"
+                  target="_blank"
+                  >example.com/in/123-456</a
+                >
+              </p>
+            </slot>
+          </div>
+          <div class="d-flex flex-fill">
+            <slot name="profile-contact-office-address">
+              <div>
+                <p class="px-3">Office address:</p>
+              </div>
+            </slot>
+          </div>
+        </address>
+      </div>
+    </div>
+  </div>
+</div>

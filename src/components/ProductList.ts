@@ -1,6 +1,5 @@
 import { products } from "../products.json";
-import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.css?raw";
-import { Component } from "./component";
+import { Component } from "./Component";
 
 export class ProductList extends Component {
   static observedAttributes = ["category"];
@@ -24,13 +23,7 @@ export class ProductList extends Component {
     const shadowRoot = this.getShadowRoot();
     if (!shadowRoot) return;
 
-    // Reset list content
-    shadowRoot.innerHTML = "";
-
-    // Attach bootstrap styles to shadow root
-    const styleNode = document.createElement("style");
-    styleNode.innerHTML = `${bootstrap}`;
-    shadowRoot.appendChild(styleNode);
+    this.setShadowRootStyleNode(shadowRoot);
 
     // ToDo: Add info-tile as first item
     const tileElements: HTMLElement[] = [];

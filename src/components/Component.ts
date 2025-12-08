@@ -22,4 +22,14 @@ export abstract class Component extends HTMLElement {
 
     return this.shadowRoot;
   }
+
+  protected setShadowRootStyleNode(shadowRoot: ShadowRoot): void {
+    // Reset list content
+    shadowRoot.innerHTML = "";
+
+    // Attach bootstrap styles to shadow root
+    const styleNode = document.createElement("style");
+    styleNode.innerHTML = `${bootstrap}`;
+    shadowRoot.appendChild(styleNode);
+  }
 }
