@@ -73,20 +73,29 @@ export class ProductList extends HTMLElement {
     styleNode.innerHTML = `${bootstrap}`;
     shadowRoot.appendChild(styleNode);
 
+    // ToDo: Add info-tile as first item
+    const tileElements: HTMLElement[] = [];
     // Render products
     this.products.forEach((product: Product) => {
       const productTileContainer = document.createElement("div");
       productTileContainer.classList.add(
         "col-12",
         "col-sm-6",
-        "col-md-4",
-        "p-1"
+        "col-lg-3",
+        "col-xl-2",
+        "px-4",
+        "pb-4",
+        "px-sm-1",
+        "pb-sm-2"
       );
       productTileContainer.innerHTML = `<coffee-party-product-tile>
-            <h5 slot="product-title" class="card-title placeholder-glow">
+      <img slot="product-image" src="${
+        product.product_image
+      }" class="card-img-top object-fit-cover bg-primary-subtle" style="height: 18rem" />
+      <h4 slot="product-title" class="card-title mb-auto fs-6 fw-bold">
                 ${product.name}
-            </h5>
-            <p slot="product-short-description" class="card-text">${
+            </h4>
+            <p slot="product-short-description" class="card-text mb-auto">${
               product.short_description
             }</p>
             <button slot="product-buy" class="btn btn-primary">
@@ -96,7 +105,11 @@ export class ProductList extends HTMLElement {
             }).format(product.price_sek)}
             </button>
         </coffee-party-product-tile>`;
-      this.shadowRoot?.appendChild(productTileContainer);
+      tileElements.push(productTileContainer);
+    });
+
+    tileElements.forEach((element) => {
+      this.shadowRoot?.appendChild(element);
     });
   }
 

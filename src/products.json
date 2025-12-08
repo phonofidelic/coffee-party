@@ -5,7 +5,7 @@
       "id": "cp-mach-001",
       "name": "AromaBrew Pro 800",
       "category": "Coffee Machine",
-      "product_image": "https://example.com/images/aromabrew-pro-800.png",
+      "product_image": "aromabrew-pro-800.png",
       "short_description": "Premium bean-to-cup machine for larger offices needing café-quality coffee.",
       "long_description": "AromaBrew Pro 800 is Coffee Party’s top-tier machine featuring a ceramic grinder, dual-thermoblock heating, and customizable drink profiles. Designed for high-volume use in medium to large workplaces.",
       "price_sek": 12175.34
@@ -14,7 +14,7 @@
       "id": "cp-mach-002",
       "name": "OfficeFlow Mini",
       "category": "Coffee Machine",
-      "product_image": "https://example.com/images/officeflow-mini.png",
+      "product_image": "officeflow-mini.png",
       "short_description": "Compact, reliable, and fast — perfect for small teams.",
       "long_description": "OfficeFlow Mini combines simplicity with high-quality brewing. Supports whole beans and ground coffee, and comes with a built-in milk frother. Ideal for meeting rooms or small office setups.",
       "price_sek": 4500
@@ -23,7 +23,7 @@
       "id": "cp-mach-003",
       "name": "BrewStation XL",
       "category": "Coffee Machine",
-      "product_image": "https://example.com/images/brewstation-xl.png",
+      "product_image": "brewstation-xl.png",
       "short_description": "High-capacity filter coffee system for large workplaces and events.",
       "long_description": "BrewStation XL is built for continuous brewing, making it perfect for hotels, coworking spaces, or company cafeterias. Equipped with a large water tank, advanced filter system, and auto-cleaning cycle.",
       "price_sek": 6990
@@ -32,7 +32,7 @@
       "id": "cp-mach-004",
       "name": "BaristaTouch One",
       "category": "Coffee Machine",
-      "product_image": "https://example.com/images/baristatouch-one.png",
+      "product_image": "baristatouch-one.webp",
       "short_description": "A smart touchscreen espresso machine with customizable recipes.",
       "long_description": "BaristaTouch One brings café convenience to the office. Users can save personalized coffee profiles, adjust grind size, temperature, milk froth levels, and more — all from a responsive touchscreen.",
       "price_sek": 27999
@@ -41,7 +41,7 @@
       "id": "cp-coffee-001",
       "name": "Nordic Roast – Medium",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/nordic-roast-medium.png",
+      "product_image": "",
       "short_description": "Balanced and smooth with notes of caramel and red berries.",
       "long_description": "Roasted in Sweden, this blend combines beans from South America and East Africa. Works well for both espresso and filter brewing.",
       "price_sek": 249
@@ -50,7 +50,7 @@
       "id": "cp-coffee-002",
       "name": "Midnight Espresso",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/midnight-espresso.png",
+      "product_image": "",
       "short_description": "Dark, intense espresso with chocolate undertones.",
       "long_description": "Midnight Espresso delivers a bold, full-bodied flavor ideal for milk-based drinks like cappuccinos and lattes.",
       "price_sek": 279
@@ -59,7 +59,7 @@
       "id": "cp-coffee-003",
       "name": "Fika Blend – Light Roast",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/fika-blend-light.png",
+      "product_image": "",
       "short_description": "A bright and floral Scandinavian-style light roast.",
       "long_description": "Fika Blend brings a crisp acidity and jasmine aroma, making it perfect for pour-over or automatic filter machines.",
       "price_sek": 259
@@ -68,7 +68,7 @@
       "id": "cp-coffee-004",
       "name": "Mountain Peak Organic",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/mountain-peak-organic.png",
+      "product_image": "",
       "short_description": "Organic medium-dark roast with nutty, earthy tones.",
       "long_description": "Certified organic and sourced from small farms in Central America, this roast offers a rich, smooth finish.",
       "price_sek": 299
@@ -77,7 +77,7 @@
       "id": "cp-coffee-005",
       "name": "French Roast Bold",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/french-roast-bold.png",
+      "product_image": "",
       "short_description": "Smoky dark roast for those who love strong, robust flavor.",
       "long_description": "Deeply roasted to produce a smoky aroma and pronounced bitterness. Great for strong black coffee.",
       "price_sek": 269
@@ -86,7 +86,7 @@
       "id": "cp-coffee-006",
       "name": "Decaf Harmony",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/decaf-harmony.png",
+      "product_image": "",
       "short_description": "Full flavor, zero caffeine.",
       "long_description": "Swiss-Water decaffeinated beans that maintain a natural sweetness and smooth body.",
       "price_sek": 259
@@ -95,7 +95,7 @@
       "id": "cp-coffee-007",
       "name": "Ethiopian Sunrise",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/ethiopian-sunrise.png",
+      "product_image": "",
       "short_description": "Fruity and aromatic with blueberry and floral notes.",
       "long_description": "A single-origin Ethiopian light roast known for its vibrant acidity and naturally sweet aftertaste.",
       "price_sek": 289
@@ -104,7 +104,7 @@
       "id": "cp-coffee-008",
       "name": "Brazilian Classic",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/brazilian-classic.png",
+      "product_image": "",
       "short_description": "Smooth, chocolatey, and reliable — a perfect everyday coffee.",
       "long_description": "This medium roast offers a rounded flavor with mild acidity. A great choice for large workplaces.",
       "price_sek": 239
@@ -113,7 +113,7 @@
       "id": "cp-coffee-009",
       "name": "Colombia Reserva",
       "category": "Coffee Beans",
-      "product_image": "https://example.com/images/colombia-reserva.png",
+      "product_image": "",
       "short_description": "A premium Colombian single-origin with caramel sweetness.",
       "long_description": "Sourced from high-altitude Colombian farms, delivering a balanced cup with soft fruit tones and a clean finish.",
       "price_sek": 299
@@ -122,7 +122,7 @@
       "id": "cp-event-001",
       "name": "Corporate Coffee Party Experience",
       "category": "Event",
-      "product_image": "https://example.com/images/corporate-coffee-event.png",
+      "product_image": "event-1.webp",
       "short_description": "A premium coffee-tasting event tailored for companies.",
       "long_description": "Coffee Party brings a full tasting setup to your office. Includes guided coffee sessions, equipment demos, team-building activities, and exclusive corporate product discounts.",
       "price_sek": 11999
@@ -131,7 +131,7 @@
       "id": "cp-event-002",
       "name": "Consumer Coffee Party Pop-Up",
       "category": "Event",
-      "product_image": "https://example.com/images/consumer-coffee-popup.png",
+      "product_image": "event-2.webp",
       "short_description": "A public tasting event where visitors can sample new beans and buy Coffee Party products.",
       "long_description": "Hosted monthly across Swedish cities, the Consumer Coffee Party Pop-Up offers coffee tasting, brewing workshops, and exclusive retail offers for visitors.",
       "price_sek": 399

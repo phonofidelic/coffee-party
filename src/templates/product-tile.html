@@ -1,31 +1,28 @@
 <div class="card h-100">
-  <div class="card-img-top bg-primary-subtle" style="height: 20rem"></div>
-  <div class="card-body h-50">
-    <div class="h-25">
-      <slot name="product-title">
-        <h5 class="card-title placeholder-glow">Product title</h5>
-      </slot>
-    </div>
-    <div class="h-75 d-flex flex-column justify-content-between">
-      <div>
-        <slot name="product-short-description">
-          <p class="card-text placeholder-glow">
-            Product description
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-6"></span>
-            <span class="placeholder col-8"></span>
-          </p>
-        </slot>
-      </div>
-      <div>
-        <slot name="product-buy">
-          <a
-            class="btn btn-primary disabled placeholder col-6"
-            aria-disabled="true"
-          ></a>
-        </slot>
-      </div>
-    </div>
+  <slot name="product-image">
+    <div class="card-img-top bg-primary-subtle" style="height: 18rem"></div>
+  </slot>
+  <div class="card-body">
+    <slot name="product-title">
+      <h5 class="card-title placeholder-glow">Product title</h5>
+    </slot>
+
+    <slot name="product-short-description">
+      <p class="card-text placeholder-glow">
+        Product description
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+    </slot>
+  </div>
+  <div class="card-body d-flex align-items-end">
+    <slot name="product-buy">
+      <a
+        class="btn btn-primary disabled placeholder col-6"
+        aria-disabled="true"
+      ></a>
+    </slot>
   </div>
 </div>
