@@ -1,11 +1,25 @@
 <div class="card pb-5 border-0 bg-light">
   <div class="row">
-    <div class="col-md-4 col-lg-6 p-lg-5">
+    <style>
+      .profile-image-container {
+        height: 630px;
+        margin: auto;
+      }
+
+      @media (max-width: 576px) {
+        .profile-image-container {
+          height: 330px;
+        }
+      }
+    </style>
+    <div
+      class="col-md-4 col-lg-6 p-lg-5 pl-lg-4 my-auto profile-image-container"
+    >
       <slot name="profile-image">
         <div class="img-fluid placeholder-glow h-100 w-100" alt="..."></div>
       </slot>
     </div>
-    <div class="col-md-8 col-lg-6 h-100 p-lg-5 mt-5">
+    <div class="col-md-8 col-lg-6 h-100 p-lg-4 mt-5">
       <div class="card-header border-0 bg-light">
         <slot name="profile-header">
           <div>

@@ -32,7 +32,7 @@ export class EmployeeProfileList extends Component {
     this.employees.forEach((employee) => {
       const employeeProfileContainer = document.createElement("div");
       employeeProfileContainer.innerHTML = `<${employeeProfileConfig.tagName}>
-        <img slot="profile-image" class="img-fluid object-fit-cover  h-100" src="${
+        <img slot="profile-image" class="profile-image img-fluid object-fit-cover h-100" src="${
           employee.profile_image
         }" alt="Profile image of ${employee.name}" />
         <div slot="profile-header">
