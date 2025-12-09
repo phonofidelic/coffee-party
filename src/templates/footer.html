@@ -9,21 +9,38 @@
 </style>
 <footer class="container-fluid pt-5">
   <div class="item row">
-    <div class="col text-bg-primary">
-      <h2 class="p-3">
-        <slot name="footer-header">Footer template header</slot>
+    <div class="col-12 col-sm-6 text-bg-primary p-3">
+      <h2>
+        <slot name="footer-header">The Footer</slot>
       </h2>
+
+      <small class="d-block">&copy; 2025 Coffee Party</small>
     </div>
-    <div class="col bg-primary-subtle text-primary fw-light text-end py-3">
-      <p class="">
-        <slot name="footer-text">Footer template text</slot>
-      </p>
-      <p class="">
-        Site provided by
-        <a href="https://github.com/phonofidelic" target="_blank">
-          phonofidelic
+    <div class="col-12 col-sm-6 bg-primary-subtle text-primary fw-light py-3">
+      <small class="text-start">
+        <slot name="footer-text">
+          This site is built with
+          <a
+            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+            target="_blank"
+            >Bootstrap</a
+          >
+          and
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
+            target="_blank"
+            >Web Components</a
+          >
+          as part of a systems development course provided by
+          <a href="https://lexicongruppen.se/" target="_blank">Lexicon</a>.
+        </slot>
+      </small>
+      <small>
+        Source code available on
+        <a href="https://github.com/phonofidelic/coffee-party" target="_blank">
+          GitHub
         </a>
-      </p>
+      </small>
     </div>
   </div>
 </footer>
