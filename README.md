@@ -1,6 +1,6 @@
 # Coffee Party
 
-This project is used to cover some basic areas in frontend web development by creating a website for the fictional startup company "Coffee Party". The site will be build using [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+This project is used to cover some basic areas in frontend web development by creating a website for the fictional startup company "Coffee Party". The site is build using [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) and [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components).
 
 ## Company Profile
 
