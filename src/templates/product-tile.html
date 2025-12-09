@@ -1,7 +1,21 @@
 <div class="card h-100">
-  <slot name="product-image">
-    <div class="card-img-top bg-primary-subtle" style="height: 18rem"></div>
-  </slot>
+  <style>
+    .product-image-container {
+      height: 18rem;
+    }
+
+    /* lg breakpoint */
+    @media (max-width: 992px) {
+      .product-image-container {
+        height: 24rem;
+      }
+    }
+  </style>
+  <div class="product-image-container">
+    <slot name="product-image">
+      <div class="card-img-top bg-primary-subtle" style="height: 18rem"></div>
+    </slot>
+  </div>
   <div class="card-body">
     <slot name="product-title">
       <h5 class="card-title placeholder-glow">Product title</h5>

@@ -44,7 +44,7 @@ export class ProductList extends Component {
         product.short_description
       }" src="${
         product.product_image
-      }" class="card-img-top object-fit-cover bg-primary-subtle" style="height: 18rem" />
+      }" class="card-img-top object-fit-cover bg-primary-subtle h-100" />
       <h4 slot="product-title" class="card-title mb-auto fs-6 fw-bold">
                 ${product.name}
             </h4>

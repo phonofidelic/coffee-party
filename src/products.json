@@ -95,7 +95,7 @@
       "id": "cp-coffee-007",
       "name": "Ethiopian Sunrise",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/ethiopian-sunrise.png",
       "short_description": "Fruity and aromatic with blueberry and floral notes.",
       "long_description": "A single-origin Ethiopian light roast known for its vibrant acidity and naturally sweet aftertaste.",
       "price_sek": 289
@@ -104,7 +104,7 @@
       "id": "cp-coffee-008",
       "name": "Brazilian Classic",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/brazilian-classic.png",
       "short_description": "Smooth, chocolatey, and reliable — a perfect everyday coffee.",
       "long_description": "This medium roast offers a rounded flavor with mild acidity. A great choice for large workplaces.",
       "price_sek": 239
