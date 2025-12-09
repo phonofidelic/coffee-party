@@ -39,9 +39,9 @@
     },
     {
       "id": "cp-coffee-001",
-      "name": "Nordic Roast – Medium",
+      "name": "Nordic Roast - Medium",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/nordic-roast.png",
       "short_description": "Balanced and smooth with notes of caramel and red berries.",
       "long_description": "Roasted in Sweden, this blend combines beans from South America and East Africa. Works well for both espresso and filter brewing.",
       "price_sek": 249
@@ -50,16 +50,16 @@
       "id": "cp-coffee-002",
       "name": "Midnight Espresso",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/midnight-espresso.png",
       "short_description": "Dark, intense espresso with chocolate undertones.",
       "long_description": "Midnight Espresso delivers a bold, full-bodied flavor ideal for milk-based drinks like cappuccinos and lattes.",
       "price_sek": 279
     },
     {
       "id": "cp-coffee-003",
-      "name": "Fika Blend – Light Roast",
+      "name": "Fika Blend - Light Roast",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/fika-blend.png",
       "short_description": "A bright and floral Scandinavian-style light roast.",
       "long_description": "Fika Blend brings a crisp acidity and jasmine aroma, making it perfect for pour-over or automatic filter machines.",
       "price_sek": 259
@@ -68,7 +68,7 @@
       "id": "cp-coffee-004",
       "name": "Mountain Peak Organic",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/mountain-peak-organic.png",
       "short_description": "Organic medium-dark roast with nutty, earthy tones.",
       "long_description": "Certified organic and sourced from small farms in Central America, this roast offers a rich, smooth finish.",
       "price_sek": 299
@@ -77,7 +77,7 @@
       "id": "cp-coffee-005",
       "name": "French Roast Bold",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/french-roast-bold.png",
       "short_description": "Smoky dark roast for those who love strong, robust flavor.",
       "long_description": "Deeply roasted to produce a smoky aroma and pronounced bitterness. Great for strong black coffee.",
       "price_sek": 269
@@ -86,7 +86,7 @@
       "id": "cp-coffee-006",
       "name": "Decaf Harmony",
       "category": "Coffee Beans",
-      "product_image": "",
+      "product_image": "products/decaf-harmony.png",
       "short_description": "Full flavor, zero caffeine.",
       "long_description": "Swiss-Water decaffeinated beans that maintain a natural sweetness and smooth body.",
       "price_sek": 259

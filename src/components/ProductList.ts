@@ -40,7 +40,9 @@ export class ProductList extends Component {
         "pb-sm-2"
       );
       productTileContainer.innerHTML = `<coffee-party-product-tile>
-      <img slot="product-image" src="${
+      <img slot="product-image" alt="${product.name}: ${
+        product.short_description
+      }" src="${
         product.product_image
       }" class="card-img-top object-fit-cover bg-primary-subtle" style="height: 18rem" />
       <h4 slot="product-title" class="card-title mb-auto fs-6 fw-bold">
